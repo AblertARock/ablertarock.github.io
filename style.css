@@ -1,0 +1,180 @@
+:root {
+  --white: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, Helvetica, sans-serif;
+  background-color: #8dff85;
+}
+
+/* Style the header */
+header {
+  background-color: #404040;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: var(--white);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: top;
+  background: #cabcab;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+aside {
+  float: right;
+  padding: 5px;
+  width: 20%;
+  background-color: #8dff85;
+  height: 315px;
+}
+
+article {
+  float: left;
+  width: 80%;
+  padding: 7px;
+  background-color: #1bacca;
+  min-height: 315px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #969696;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 60px;
+}
+
+.nav:link, .nav:visited {
+  background-color: white;
+  color: red;
+  padding: 9px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid red;
+  opacity: 1 !important;
+}
+
+.nav:hover, .nav:active {
+  background-color: red;
+  color: white;
+  opacity: 1 !important;
+}
+
+.aside:link, .aside:visited {
+  margin-bottom: 10px;
+  float: right;
+  display: block;
+  background-color: white;
+  color: red;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid red;
+}
+
+.aside:hover, .aside:active {
+  background-color: red;
+  color: white;
+}
+
+.asideli {
+  list-style-image: url("windowslogo.png");
+  height: 1602px; 
+  position: relative;
+}
+
+img.asideli {
+  width: 10px;
+}
+
+.asideli:hover {
+  color: white;
+}
+
+.ico {
+  width: 40px;
+  height:40px;
+  float: right;
+  margin-left: 10px;
+}
+
+.inlinetext {
+  width: 100px;
+  transform: translate(-130px, -127px);
+}
+
+.mac {
+  height: 1px;
+}
+
+h2, h6 {
+  color: white;
+}
+
+
+td.middle {
+  padding-bottom: 10px;
+}
+
+td.head {
+  width: 13%;
+  text-align: center;
+}
+
+td.center {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 2px;
+}
+
+img.download {
+  max-width: 30px;
+  max-height: inherit;
+  display: inline;
+  float: left;
+}
+
+img.nav {
+  margin-top: 2;
+  max-height: 15px;
+}
+
+.boom:link, .boom:visited {
+  background-color: white;
+  color: red;
+  padding: 9px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid red;
+  opacity: 1 !important;
+}
+
+.boom:hover, .boom:active {
+  background-color: red;
+  color: white;
+  transform: scale(100);
+}
